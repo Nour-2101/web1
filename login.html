@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins",sans-serif;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('img.jpg') no-repeat center center;
+            background-size: cover;
+            text-align: center;
+        }
+        .wrapper{
+            width: 400px;
+            background: rgb(228, 180, 77);
+            color: #fff;
+            border-radius: 30px;
+            padding: 40px 40px;
+        }
+
+        .wrapper h1{
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .wrapper .input-box{
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin: 30px 0;
+        }
+
+        .input-box input{
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(245, 241, 241, 0.2);
+            border-radius: 40px;
+            font-size: 16px;
+            color: #f8f7f7;
+            padding: 20px 45px 20px 20px;
+        }
+
+        .input-box input::placeholder{
+            color: #fff;
+        }
+
+        .input-box i {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+        }
+
+        .wrapper .remember-forgot{
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: -15px 0 15px;
+        }
+
+        .remember-forgot label input {
+            accent-color: #fff;
+            margin-right: 3px;
+        }
+
+        .remember-forgot a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .remember-forgot a:hover {
+            text-decoration: underline;
+            color: rgb(139, 132, 132);
+        }
+
+        .wrapper .btn {
+            width: 100%;
+            height: 45px;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            cursor: grab;
+            font-size: 16px;
+            color: black;
+            font-size: 600;
+        }
+
+        .reg{
+            position: absolute;
+            top: 68.5%;
+            left: 56.5%;
+            text-decoration: none;
+            color: #f8f7f7;
+            font-size: medium;
+        }
+        
+        .reg:hover{
+            color: rgb(139, 132, 132);
+            text-decoration: underline;
+        }
+        
+        button{
+            
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="index.html" method="get">
+            <h1>Log in</h1>
+    <div class="input-box">
+        <input type="text" placeholder="Username" required>
+        <i class='bx bxs-user'></i>
+    </div>
+
+    <div class="input-box">
+        <input type="password" placeholder="password" required>
+        <i class='bx bxs-lock-alt'></i>
+    </div>
+
+    <div class="remember-forgot">
+        <label><input type="checkbox">Remember me </label>
+        <a href="forget-password.html">Forgot password</a>
+    </div>
+    <a href="index.html">
+        <button type="submit" class="btn">Log in</button>
+    </a>
+    
+
+    <div class="regester-link">
+        <p>Do not have an account </p>
+        <a href="signup.html"><h3 class="reg">Sign up</h3></a>
+    </div>
+    <a href="index.html">
+        <button>Home Page</button>
+    </a>
+        </form>
+    </div>
+    
+</body>
+</html>
